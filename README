@@ -1,0 +1,28 @@
+# ---------------------------------------------------
+#    Name: FATIMA REHMATULLAH
+#    ID: 1631703
+#    CMPUT 274, Fall  2020
+#    Weekly Assignment#1: Password Validator
+# --------------------------------------------------
+
+   Files included:
+1) validator.py
+2) README
+
+   Notes: 
+
+The file validator.py contains two functions "generate" and "vaidate". 
+
+*  The validate function takes in a string argument and determines if the password entered is "Invalid", "Insecure" or "Secure". The function returns the result as a string which is then outputted when the function is called in the terminal. 
+It makes use of the list datatype to store all the allowed digits, special characters and forbidden characters. The code traverses the string input and checks one character at a time to determine the nature of the password.
+
+*  The generate function takes an integer(n) argument and generates a "secure" password of that length(n). To improve efficiency, the password generator uses an algorithm which produces a secure password in the first place such that it doesnt need to use the validate function. Since passwords shorter than 8 characters are deemed invalid, the generator gives an error statement if n is less than 8. 
+
+  Assumptions:
+* The program assumes that the data entered as an argument for the validate function is a string. 
+
+  Running Instructions:
+
+* Open a terminal window and run python3
+* Import the validator file in the terminal and use the "validator.validate(password)" or     "validator.generate(n)" command in the terminal to see the functions work. 
+
